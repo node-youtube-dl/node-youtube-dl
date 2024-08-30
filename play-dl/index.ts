@@ -47,8 +47,7 @@ import {
     DeezerAlbum,
     dz_search
 } from './Deezer';
-import { setToken } from './token';
-
+import { setToken, tokenOptions } from './token';
 enum AudioPlayerStatus {
     Idle = 'idle',
     Buffering = 'buffering',
@@ -507,7 +506,7 @@ export {
 };
 
 // Export Types
-export { Deezer, YouTube, SoundCloud, Spotify, YouTubeStream };
+export { Deezer, YouTube, SoundCloud, Spotify, YouTubeStream, tokenOptions };
 
 // Export Default
 export default {
@@ -545,5 +544,5 @@ export default {
     validate,
     video_basic_info,
     video_info,
-    yt_validate
+    yt_validate,
 };

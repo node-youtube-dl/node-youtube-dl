@@ -3,7 +3,7 @@ import { setSoundCloudToken } from './SoundCloud';
 import { setSpotifyToken } from './Spotify';
 import { setCookieToken } from './YouTube/utils/cookie';
 
-interface tokenOptions {
+export interface tokenOptions {
     spotify?: {
         client_id: string;
         client_secret: string;
